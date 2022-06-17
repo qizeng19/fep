@@ -7,4 +7,5 @@ function useParamObj<T>() {
     let {current} = useRef(urlParam<T>(location.search))
     return current
 }
+
 export default useParamObj
