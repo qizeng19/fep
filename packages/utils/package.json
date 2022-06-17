@@ -1,0 +1,26 @@
+{
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "build" : "tsc -b"
+  },
+  "name": "@fep/utils",
+  "author": "qizeng",
+  "module": "dist/utils.esm.js",
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.3"
+  },
+  "dependencies": {
+  }
+}
