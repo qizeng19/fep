@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "name": "@fep/utils",
   "author": "qizeng",
@@ -18,7 +18,6 @@
     "clean": "../../scripts/clean_package.sh",
     "dev": "tsc -w & rollup -c rollup.config.js -w"
   },
- 
   "devDependencies": {
     "@rollup/plugin-babel": "^5.3.1",
     "@rollup/plugin-commonjs": "^22.0.0",
@@ -31,6 +30,5 @@
     "rollup-plugin-typescript2": "^0.32.1",
     "tslib": "^2.4.0",
     "typescript": "^4.7.3"
-  },
-  "dependencies": {}
+  }
 }
