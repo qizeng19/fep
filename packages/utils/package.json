@@ -1,8 +1,11 @@
 {
   "version": "1.0.0",
   "license": "MIT",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "name": "@fep/utils",
+  "author": "qizeng",
+  "module": "dist/esm/index.js",
+  "main": "dist/cjs/index.js",
+  "typings": "lib/index.d.ts",
   "files": [
     "dist",
     "src"
@@ -11,16 +14,23 @@
     "node": ">=10"
   },
   "scripts": {
-    "build" : "tsc -b"
+    "build": "tsc && rollup -c rollup.config.js",
+    "clean": "../../scripts/clean_package.sh",
+    "dev": "tsc -w & rollup -c rollup.config.js -w"
   },
-  "name": "@fep/utils",
-  "author": "qizeng",
-  "module": "dist/utils.esm.js",
+ 
   "devDependencies": {
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-commonjs": "^22.0.0",
+    "@rollup/plugin-image": "^2.1.1",
+    "@rollup/plugin-node-resolve": "^13.3.0",
     "husky": "^8.0.1",
+    "rollup": "^2.75.6",
+    "rollup-plugin-postcss": "^3.1.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.32.1",
     "tslib": "^2.4.0",
     "typescript": "^4.7.3"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }

@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import {useLocation} from 'react-router-dom'
-import  {urlParam} from "@abc/utils"
+import  {urlParam} from "@fep/utils"
 
 function useParamObj<T>() {
     const location = useLocation()

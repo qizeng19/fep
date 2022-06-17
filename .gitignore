@@ -3,3 +3,7 @@
 node_modules
 packages/**/node_modules
 lerna-debug.log
+dist
+lib
+yarn-error.log
+yarn.lock
